@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="f14eb6dd3fc64fd8ba31f750b0024c41" Name="Diagram1" ZoomLevel="74">
+        <EntityTypeShape EntityType="Model.AspNetRoles" Width="1.5" PointX="0.75" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.AspNetUsers" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Bookings" Width="1.875" PointX="8.25" PointY="2" />
+        <EntityTypeShape EntityType="Model.Doctor" Width="2" PointX="5" PointY="1" />
+        <EntityTypeShape EntityType="Model.Patient" Width="1.5" PointX="5" PointY="3.625" />
+        <InheritanceConnector EntityType="Model.Patient" />
+        <InheritanceConnector EntityType="Model.Doctor" />
+        <AssociationConnector Association="Model.DoctorBookings" />
+        <AssociationConnector Association="Model.PatientBookings" />
+        <AssociationConnector Association="Model.AspNetUserRoles" />
+        <EntityTypeShape EntityType="Model.AspNetUserLogins" Width="1.5" PointX="0.75" PointY="4.125" />
+        <AssociationConnector Association="Model.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
